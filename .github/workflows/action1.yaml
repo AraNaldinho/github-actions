@@ -1,0 +1,17 @@
+name: this is aravind 1st action
+
+on: [push,fork]
+
+jobs:
+    checkout-job:
+        runs-on: ubuntu-24.04
+        steps:
+        - name: welcome-job
+          run: echo "welcome my baby"
+
+        - name: thanks-wifey
+          run: echo "thanks gundu"
+          
+        - name: apologize
+          run: echo "sorry for game"
+
