@@ -12,7 +12,7 @@ jobs:
         - name: install cowsay
           run: |
             echo "hello world"
-            apt-get install cowsay
+            sudo apt-get install cowsay
         
         - name: run-cowsay
           run: cowsay -f dragon "love you gundu"
