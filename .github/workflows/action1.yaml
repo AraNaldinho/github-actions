@@ -1,6 +1,6 @@
 name: this is aravind 1st action
 
-on: [push,fork]
+on: push
 
 jobs:
     checkout-job:
@@ -8,16 +8,14 @@ jobs:
         steps:
         - name: checkingoutrepo
           uses: actions/checkout@v4
-
-        - name: welcome-job
-          run: echo "welcome my baby"
-
-        - name: thanks-wifey
-          run: echo "thanks gundu"
-          
-        - name: apologize
-          run: echo "sorry for game"
         
-        - name: read the readme
-          run: cat README.md
+        - name: install cowsay
+          run: |
+            echo "hello world"
+            apt-get install cowsay
+        
+        - name: run-cowsay
+          run: cowsay -f dragon "love you gundu"
+
+
 
